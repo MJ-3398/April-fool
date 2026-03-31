@@ -253,9 +253,30 @@
       }
     </script>
     <!-- 축의금 버튼 -->
-    <a class="btn" onclick="showPrank()">축의금 계좌 보기</a>
-    <!-- 만우절 반전 -->
-    <div id="prank" class="hidden">
+    <script>
+    function showAccount() {
+        const prankDiv = document.getElementById("prank");
+
+        // 계좌 먼저 보여주기
+        prankDiv.innerHTML = `
+            <div style="font-size:22px; font-weight:600; color:#333;">
+                농협은행 351-0854-6330-43<br>
+                예금주: 강민재
+            </div>
+        `;
+        prankDiv.classList.remove("hidden");
+
+        // 5초 후 자동으로 만우절 반전
+        setTimeout(() => {
+            prankDiv.innerHTML = `
+                <div style="font-size:24px; font-weight:700; color:#d04f4f;">
+                    만우절! 😂<br>
+                    진짜 계좌 아님!
+                </div>
+            `;
+        }, 5000);
+    }
+</script>
       만우절!<br>
     </div>
   </body>
