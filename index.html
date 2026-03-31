@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>초대합니다</title>
+    <style>
+      body {
+      font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      margin: 0;
+      background: #faf7f2;
+      color: #333;
+      text-align: center;
+      }
+      .hero {
+      width: 100%;
+      height: 420px;
+      background-image: url("https://images.pexels.com/photos/11702810/pexels-photo-11702810.jpeg");
+      background-size: cover;
+      background-position: center;
+      }
+      .overlay {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      font-size: 28px;
+      font-weight: 600;
+      }
+      .section {
+      padding: 40px 22px;
+      line-height: 1.7;
+      text-align: center;
+      background: #faf9f7;
+      }
+      .title {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      }
+      .names {
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 14px;
+      }
+      .date-place {
+      background: #ffffff;
+      padding: 35px 18px;
+      border-radius: 14px;
+      margin: 30px 18px;
+      font-size: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      }
+      .btn {
+      display: block;
+      margin: 22px auto;
+      padding: 14px 18px;
+      width: 80%;
+      background: #5a6cff;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      }
+      .btn:active {
+      opacity: 0.8;
+      }
+      .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #d04f4f;
+      }
+      h1 {
+      margin-top: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      }
+      .names {
+      font-size: 26px;
+      margin: 10px 0;
+      font-weight: 600;
+      }
+      .d-day {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #b85b5b;
+      font-weight: 600;
+      }
+      .date-info {
+      margin-top: 25px;
+      font-size: 20px;
+      line-height: 1.6;
+      }
+      .calendar {
+      margin: 35px auto;
+      width: 320px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      }
+      th {
+      padding-bottom: 10px;
+      color: #666;
+      }
+      td {
+      padding: 8px 0;
+      }
+      .highlight {
+      background: #ffe0e5;
+      color: #b40024;
+      font-weight: bold;
+      border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+    </div>
+    <h1>결혼식에 초대합니다</h1>
+    <!-- 인사말 -->
+    <div class="section">
+      <div class="title">초대합니다.</div>
+      따뜻한 봄날,<br>
+      서로의 마음을 나누며<br>
+      소중한 약속의 자리에 여러분을 초대합니다.
+    </div>
+    <!-- 이름 -->
+    <div class="section">
+      <div class="names">
+        신랑 <b>강민재</b>
+        <br>
+        신부 <b>Fool April</b>
+      </div>
+    </div>
+    <!-- 날짜/장소 -->
+    <div class="date-place">
+      ✦ 2026년 4월 1일 화요일 오후 2시<br>
+      <br>
+      ✦ 부산 해운대 블루포트웨딩 3층 아너스홀
+    </div>
+    <div class="names">
+      강민재 ♥ Fool April
+    </div>
+    <div id="dday" class="d-day">
+    </div>
+    <div class="date-info">
+      2026년 5월 16일 (토요일)<br>
+      오후 2시
+    </div>
+    <!-- 2026년 5월 달력 -->
+    <div class="calendar">
+      <h3>2026년 5월</h3>
+      <table>
+        <tr>
+          <th>일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th>토</th>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td class="highlight">16</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      // 결혼식 날짜
+      const weddingDate = new Date("2026-05-16T14:00:00");
+      // 오늘 날짜
+      const today = new Date();
+      // 날짜 차이 계산 (단위: 일)
+      const diffTime = weddingDate - today;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      // 표시
+      document.getElementById("dday").innerText =
+      `민재 ♥ Fool April의 결혼식이 ${diffDays}일 남았습니다.`;
+      function showPrank() {
+      document.getElementById("prank").classList.remove("hidden");
+      }
+    </script>
+    <!-- 축의금 버튼 -->
+    <a class="btn" onclick="showPrank()">축의금 계좌 보기</a>
+    <!-- 만우절 반전 -->
+    <div id="prank" class="hidden">
+      만우절!<br>
+    </div>
+  </body>
+</html>
